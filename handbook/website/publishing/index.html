@@ -1,0 +1,1948 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://zju-starlight.github.io/handbook/website/publishing/">
+      
+      
+        <link rel="prev" href="../setup/">
+      
+      
+        <link rel="next" href="../git/">
+      
+      
+      <link rel="icon" href="../../../static/img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>网站文章发布 - 星弦·北门观测站</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../static/css/site.css">
+    
+      <link rel="stylesheet" href="../../../static/css/lanterns.css">
+    
+      <link rel="stylesheet" href="../../../static/css/terminal.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#北门观测站文章发布操作手册" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="星弦·北门观测站" class="md-header__button md-logo" aria-label="星弦·北门观测站" data-md-component="logo">
+      
+  <img src="../../../static/img/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            星弦·北门观测站
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              网站文章发布
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="潜入黑暗"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="潜入黑暗" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="迎接光明"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="迎接光明" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0-4.5c5 0 9.27 3.11 11 7.5-1.73 4.39-6 7.5-11 7.5S2.73 16.39 1 12c1.73-4.39 6-7.5 11-7.5M3.18 12a9.821 9.821 0 0 0 17.64 0 9.821 9.821 0 0 0-17.64 0"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../events/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  活动公告
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../play/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  在线体验
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  办事手册
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../archive/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  历史档案
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="星弦·北门观测站" class="md-nav__button md-logo" aria-label="星弦·北门观测站" data-md-component="logo">
+      
+  <img src="../../../static/img/favicon.png" alt="logo">
+
+    </a>
+    星弦·北门观测站
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../.." class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../events/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    活动公告
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../play/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    在线体验
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    办事手册
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            办事手册
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    岗位职责与协作
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../departments/outreach/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    部门工作
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../activity-guide/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    活动举办
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../publicity/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    宣传与媒体
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../handover/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    日常管理与换届交接
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    文档写作与网站维护
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            文档写作与网站维护
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../writing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    指南撰写指南
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../markdown/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Markdown语法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Git、Python、VS Code 与本地环境安装
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    网站文章发布
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    网站文章发布
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-获得仓库权限" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 获得仓库权限
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-第一次把网站下载到电脑" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 第一次把网站下载到电脑
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 第一次把网站下载到电脑">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-克隆仓库" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 克隆仓库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-打开克隆后的项目" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 打开克隆后的项目
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-每次写文章前先同步" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 每次写文章前先同步
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-新建并编写文章" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 新建并编写文章
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 新建并编写文章">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-选择文件位置" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 选择文件位置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-优先用文字链接和表格" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 优先用文字、链接和表格
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-将新文章加入导航" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 将新文章加入导航
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-本地构建和预览" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 本地构建和预览
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 本地构建和预览">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-第一次创建项目环境" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 第一次创建项目环境
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-先检查构建再启动预览" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 先检查构建，再启动预览
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-检查网页" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 检查网页
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-提交并推送到-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 提交并推送到 GitHub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 提交并推送到 GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-检查本次修改" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 检查本次修改
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-暂存提交推送" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 暂存、提交、推送
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-确认本次发布成功" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. 确认本次发布成功
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#发布前后检查清单" class="md-nav__link">
+    <span class="md-ellipsis">
+      发布前后检查清单
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Git与GitHub原理补充
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    网站框架参考
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../templates/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    文件与模板
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    资料入口
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../archive/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    历史档案
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-获得仓库权限" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 获得仓库权限
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-第一次把网站下载到电脑" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 第一次把网站下载到电脑
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 第一次把网站下载到电脑">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-克隆仓库" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 克隆仓库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-打开克隆后的项目" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 打开克隆后的项目
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-每次写文章前先同步" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 每次写文章前先同步
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-新建并编写文章" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 新建并编写文章
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 新建并编写文章">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-选择文件位置" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 选择文件位置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-优先用文字链接和表格" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 优先用文字、链接和表格
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-将新文章加入导航" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 将新文章加入导航
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-本地构建和预览" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 本地构建和预览
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 本地构建和预览">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-第一次创建项目环境" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 第一次创建项目环境
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-先检查构建再启动预览" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 先检查构建，再启动预览
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-检查网页" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 检查网页
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-提交并推送到-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 提交并推送到 GitHub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 提交并推送到 GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-检查本次修改" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 检查本次修改
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-暂存提交推送" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 暂存、提交、推送
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-确认本次发布成功" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. 确认本次发布成功
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#发布前后检查清单" class="md-nav__link">
+    <span class="md-ellipsis">
+      发布前后检查清单
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="北门观测站文章发布操作手册">北门观测站文章发布操作手册<a class="headerlink" href="#北门观测站文章发布操作手册" title="Permanent link">&para;</a></h1>
+<p>本文带你完成“下载网站 → 写一篇文章 → 本地检查 → 发布”。所有操作都用文字说明；先完成<a href="../setup/">本地环境安装</a>，再从第 1 节开始。</p>
+<p>源码在 <a href="https://github.com/ZJU-Starlight/zju-starlight.github.io">ZJU-Starlight/zju-starlight.github.io</a>，正式网站是<a href="https://zju-starlight.github.io/">星弦·北门观测站</a>。源码提交到 <code>main</code> 分支后，由 GitHub Actions 构建并写入 <code>gh-pages</code> 分支，再由 GitHub Pages 发布。开始前在工作群说明准备修改的页面，确认没有人同时编辑它。</p>
+<p>第一次操作依次完成第 1–8 节。以后从第 3 节同步开始；第 6 节的虚拟环境只需创建一次。</p>
+<h2 id="1-获得仓库权限">1. 获得仓库权限<a class="headerlink" href="#1-获得仓库权限" title="Permanent link">&para;</a></h2>
+<ol>
+<li>登录 <a href="https://github.com/">GitHub</a>，点击头像确认自己的用户名。</li>
+<li>把用户名发给协会网站负责人，请对方将你加入仓库协作者。</li>
+<li>在 GitHub 通知或注册邮箱中找到邀请，选择 <strong>Accept invitation（接受邀请）</strong>。</li>
+<li>打开<a href="https://github.com/ZJU-Starlight/zju-starlight.github.io">协会仓库</a>，确认仓库名是 <code>ZJU-Starlight/zju-starlight.github.io</code>，文件列表上方的分支为 <code>main</code>。</li>
+</ol>
+<p>看到公开仓库的文件只说明可以阅读；要推送修改，还需要接受协作者邀请。负责人只需要用户名，不需要密码、验证码或访问令牌。遇到 404 时先核对登录账号和邀请状态。</p>
+<h2 id="2-第一次把网站下载到电脑">2. 第一次把网站下载到电脑<a class="headerlink" href="#2-第一次把网站下载到电脑" title="Permanent link">&para;</a></h2>
+<h3 id="21-克隆仓库">2.1 克隆仓库<a class="headerlink" href="#21-克隆仓库" title="Permanent link">&para;</a></h3>
+<p>“克隆”会把网站源文件和版本记录下载到电脑。这一步只做一次。</p>
+<ol>
+<li>在电脑上新建一个存放项目的文件夹，例如“文档”中的 <code>Projects</code>。</li>
+<li>打开 VS Code，选择 <strong>File（文件）→ Open Folder…（打开文件夹）</strong>，打开 <code>Projects</code>。</li>
+<li>选择 <strong>Terminal（终端）→ New Terminal（新建终端）</strong>。在窗口下方的终端运行：</li>
+</ol>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ZJU-Starlight/zju-starlight.github.io.git
+</code></pre></div>
+<p>命令结束后，<code>Projects</code> 中应出现 <code>zju-starlight.github.io</code> 文件夹。如果提示目标文件夹已存在，先查看是否已经克隆过，不要反复下载。</p>
+<p>也可以从仓库文件列表上方的 <strong>Code → HTTPS</strong> 复制克隆地址；应与上面命令中的地址一致。下载 ZIP 不包含 Git 版本记录，不适用于后面的提交步骤。</p>
+<h3 id="22-打开克隆后的项目">2.2 打开克隆后的项目<a class="headerlink" href="#22-打开克隆后的项目" title="Permanent link">&para;</a></h3>
+<p>再次选择 <strong>File → Open Folder…</strong>，这次打开 <code>Projects</code> 内的 <strong>zju-starlight.github.io</strong>。左侧 <strong>Explorer（资源管理器）</strong> 应能找到以下内容：</p>
+<div class="highlight"><pre><span></span><code>zju-starlight.github.io/
+├── docs/                  # 网站正文
+│   ├── handbook/          # 办事手册
+│   └── static/            # 图片、样式、脚本与数据
+├── drafts/                # 草稿与练习，不发布到网站
+├── mkdocs.yml             # 导航和网站配置
+├── requirements.txt       # 构建网站所需的 Python 包
+└── .github/workflows/     # 自动发布配置
+</code></pre></div>
+<p><code>site/</code> 是构建后生成的目录，刚克隆时没有它是正常的。日常写文章主要编辑 <code>docs/</code>；新增导航时才修改 <code>mkdocs.yml</code>。</p>
+<p>重新选择 <strong>Terminal → New Terminal</strong>，运行：</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>status
+</code></pre></div>
+<p>第一次正常克隆后，输出应包含下面两行（中间可能还有其他说明）：</p>
+<div class="highlight"><pre><span></span><code>On branch main
+nothing to commit, working tree clean
+</code></pre></div>
+<p>这分别表示“当前在 main 分支”和“没有待提交的改动”。如果出现 <code>not a git repository</code>，确认打开的是 <code>zju-starlight.github.io</code>，而不是外层 <code>Projects</code> 或单篇文章。</p>
+<h2 id="3-每次写文章前先同步">3. 每次写文章前先同步<a class="headerlink" href="#3-每次写文章前先同步" title="Permanent link">&para;</a></h2>
+<p>在项目终端先运行 <code>git status</code>。如果已有上次未完成的修改，先确认这些文件的用途，不要直接继续同步。</p>
+<p>工作区干净后，按顺序运行：</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>main
+git<span class="w"> </span>pull<span class="w"> </span>--ff-only<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+<p><code>Already up to date.</code> 表示没有新的远端提交；显示更新文件列表并正常结束，也表示同步成功。<code>--ff-only</code> 会在本地和远端各自有新提交时停止，让你先处理分歧。</p>
+<p>如果提示不能快进、存在冲突、认证失败或权限不足，保留完整错误文字联系负责人。不要用强制推送或删除本地文件来“解决”报错。</p>
+<h2 id="4-新建并编写文章">4. 新建并编写文章<a class="headerlink" href="#4-新建并编写文章" title="Permanent link">&para;</a></h2>
+<h3 id="41-选择文件位置">4.1 选择文件位置<a class="headerlink" href="#41-选择文件位置" title="Permanent link">&para;</a></h3>
+<p>在 Explorer 中展开 <code>docs → handbook</code>，右键点击 <code>handbook</code>，选择 <strong>New File（新建文件）</strong>，输入 <code>my-first-guide.md</code>。文件名使用小写英文、数字和短横线；尚未完成的文章先放在仓库根目录的 <code>drafts/</code>。</p>
+<p>把下面的模板复制进去，再改成自己的内容：</p>
+<div class="highlight"><pre><span></span><code><span class="gh"># 文章标题</span>
+
+说明这篇指南适合谁、能帮助读者完成什么。
+
+<span class="gu">## 开始前准备</span>
+
+<span class="k">-</span><span class="w"> </span>需要的账号、权限或材料。
+
+<span class="gu">## 操作步骤</span>
+
+<span class="k">1.</span> 从哪个入口开始，执行什么操作。
+<span class="k">2.</span> 填写哪些信息，怎样判断这一步完成。
+
+<span class="gu">## 完成后检查</span>
+
+说明成功时应该看到什么，以及失败时如何处理。
+</code></pre></div>
+<p>按 <strong>Ctrl + S</strong>（Windows）或 <strong>Command + S</strong>（macOS）保存。保存只更新电脑上的文件；提交和上传在第 7 节完成。</p>
+<h3 id="42-优先用文字链接和表格">4.2 优先用文字、链接和表格<a class="headerlink" href="#42-优先用文字链接和表格" title="Permanent link">&para;</a></h3>
+<p>按钮写全名，例如“<strong>Terminal → New Terminal</strong>”；下载入口写成有名称的链接；填写要求使用“字段—填什么—注意事项”表；命令与示例输出分别放进代码块。</p>
+<p>需要解释关系或条件分支时，可以使用 Mermaid，但图前仍要写出等价文字。参考<a href="../git/">Git 原理补充</a>中的实例。简单的直线步骤用编号列表即可。</p>
+<p>只有照片、场地布置等需要读者观察外观的内容才考虑插图。确有必要时，将图片放在 <code>docs/static/img/</code>，使用有意义的英文文件名和替代文本。例如当前文章位于 <code>docs/handbook/</code> 时：</p>
+<div class="highlight"><pre><span></span><code>![<span class="nt">活动场地内桌椅的排列方式</span>](<span class="na">../static/img/activity-room.jpg</span>)
+</code></pre></div>
+<p>这只是写法示例；使用前必须放入真实图片。位于更深子目录的文章，需要按文章所在位置调整相对路径。图片没有加载时，正文也应保留必要的说明。</p>
+<h2 id="5-将新文章加入导航">5. 将新文章加入导航<a class="headerlink" href="#5-将新文章加入导航" title="Permanent link">&para;</a></h2>
+<p>打开项目根目录的 <code>mkdocs.yml</code>，找到“办事手册 → 文档写作与网站维护”。在已有“网站文章发布”这一行之后增加同样缩进的一行：</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">文档写作与网站维护</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">handbook/website/index.md</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">指南撰写指南</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">handbook/website/writing.md</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Markdown语法</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">handbook/website/markdown.md</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Git、Python、VS Code 与本地环境安装</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">handbook/website/setup.md</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">网站文章发布</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">handbook/website/publishing.md</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">我的第一篇教程</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">handbook/my-first-guide.md</span>
+</code></pre></div>
+<p>以上是配置节选：只增加新文章这一行，不要用整个片段覆盖现有导航。左侧是读者看到的标题，右侧是相对于 <code>docs/</code> 的文件路径。缩进使用空格，新增行与相邻文章对齐。</p>
+<p>只修改已有文章的正文时，不需要改导航。</p>
+<h2 id="6-本地构建和预览">6. 本地构建和预览<a class="headerlink" href="#6-本地构建和预览" title="Permanent link">&para;</a></h2>
+<h3 id="61-第一次创建项目环境">6.1 第一次创建项目环境<a class="headerlink" href="#61-第一次创建项目环境" title="Permanent link">&para;</a></h3>
+<p>终端应位于 <code>zju-starlight.github.io</code> 根目录。按照操作系统执行对应一组命令。虚拟环境把这个项目的依赖放在 <code>.venv</code> 中，避免影响其他项目。</p>
+<p>Windows（VS Code 的 PowerShell 终端）：</p>
+<div class="highlight"><pre><span></span><code><span class="n">py</span> <span class="p">-</span><span class="n">3</span><span class="p">.</span><span class="n">12</span> <span class="n">-m</span> <span class="n">venv</span> <span class="p">.</span><span class="n">venv</span>
+<span class="p">.\.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">python</span><span class="p">.</span><span class="n">exe</span> <span class="n">-m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">-r</span> <span class="n">requirements</span><span class="p">.</span><span class="n">txt</span>
+</code></pre></div>
+<p>macOS：</p>
+<div class="highlight"><pre><span></span><code>python3.12<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+.venv/bin/python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</code></pre></div>
+<p>已有 <code>.venv</code> 时跳过创建命令；<code>requirements.txt</code> 更新后重新执行安装依赖的命令。下面直接使用环境里的 Python，不需要激活脚本。</p>
+<h3 id="62-先检查构建再启动预览">6.2 先检查构建，再启动预览<a class="headerlink" href="#62-先检查构建再启动预览" title="Permanent link">&para;</a></h3>
+<p>Windows：</p>
+<div class="highlight"><pre><span></span><code><span class="p">.\.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">python</span><span class="p">.</span><span class="n">exe</span> <span class="n">-m</span> <span class="n">mkdocs</span> <span class="n">build</span> <span class="p">-</span><span class="n">-strict</span>
+<span class="p">.\.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">python</span><span class="p">.</span><span class="n">exe</span> <span class="n">-m</span> <span class="n">mkdocs</span> <span class="n">serve</span>
+</code></pre></div>
+<p>macOS：</p>
+<div class="highlight"><pre><span></span><code>.venv/bin/python<span class="w"> </span>-m<span class="w"> </span>mkdocs<span class="w"> </span>build<span class="w"> </span>--strict
+.venv/bin/python<span class="w"> </span>-m<span class="w"> </span>mkdocs<span class="w"> </span>serve
+</code></pre></div>
+<p>第一条命令显示 <code>Documentation built</code> 且没有构建错误后，再执行第二条。<code>--strict</code> 会把警告视为失败，便于在上传前发现问题。安装或构建报错时，先阅读终端输出；重新出现输入光标本身不代表成功。</p>
+<p>预览启动后，打开终端实际打印的网址，通常是 <code>http://127.0.0.1:8000/</code>。本地预览只在自己的电脑上运行，不会自动发布。</p>
+<h3 id="63-检查网页">6.3 检查网页<a class="headerlink" href="#63-检查网页" title="Permanent link">&para;</a></h3>
+<p>从“<strong>骨干手册 → 文档写作与网站维护 → 我的第一篇教程</strong>”进入刚加入的页面。已有文章则按其实际栏目查找。</p>
+<ul>
+<li>标题、编号步骤、表格和代码块是否完整；示例命令是否可以复制。</li>
+<li>本地链接能否跳到目标页面；官方外链是否指向正确服务。</li>
+<li>如果有 Mermaid，是否显示为图形；关闭图形时，正文是否仍能解释流程。</li>
+<li>缩窄浏览器窗口，正文是否正常换行，表格和代码能否在各自区域横向滚动。</li>
+<li>本地页面是否确实包含刚保存的修改。</li>
+</ul>
+<p>保存文件后，预览通常自动刷新。检查结束，在终端按 <strong>Ctrl + C</strong> 停止服务。构建生成的 <code>site/</code> 和项目环境 <code>.venv/</code> 已被忽略，不需要提交。</p>
+<h2 id="7-提交并推送到-github">7. 提交并推送到 GitHub<a class="headerlink" href="#7-提交并推送到-github" title="Permanent link">&para;</a></h2>
+<h3 id="71-检查本次修改">7.1 检查本次修改<a class="headerlink" href="#71-检查本次修改" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>status
+git<span class="w"> </span>diff
+</code></pre></div>
+<p><code>git diff</code> 显示已跟踪文件的未暂存修改；新文件还要在编辑器中查看。状态关键词含义如下：</p>
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>含义</th>
+<th>下一步</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Untracked files</code></td>
+<td>新文件尚未纳入 Git</td>
+<td>核对是否为本次新增的文章</td>
+</tr>
+<tr>
+<td><code>Changes not staged for commit</code></td>
+<td>修改尚未选入提交</td>
+<td>查看差异，确认需要提交</td>
+</tr>
+<tr>
+<td><code>Changes to be committed</code></td>
+<td>已暂存的内容</td>
+<td>用 <code>git diff --staged</code> 核对</td>
+</tr>
+<tr>
+<td><code>nothing to commit, working tree clean</code></td>
+<td>没有待提交的文件改动</td>
+<td>若预期有修改，检查是否保存、是否在正确目录</td>
+</tr>
+</tbody>
+</table>
+<p>出现不认识的文件时先查明来源，不要把所有文件一次性加入提交。</p>
+<h3 id="72-暂存提交推送">7.2 暂存、提交、推送<a class="headerlink" href="#72-暂存提交推送" title="Permanent link">&para;</a></h3>
+<p>以下命令对应前面的新文章示例；按实际修改调整路径。已有文章没有改导航时，省略 <code>git add mkdocs.yml</code>。</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>docs/handbook/my-first-guide.md
+git<span class="w"> </span>add<span class="w"> </span>mkdocs.yml
+git<span class="w"> </span>diff<span class="w"> </span>--staged
+</code></pre></div>
+<p>核对暂存内容后继续：</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;docs: add my first guide&quot;</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+<p>如果确实新增了图片，单独暂存它的实际路径。提交说明写清改了什么。<code>commit</code> 在本地记录版本；<code>push</code> 才将提交上传。HTTPS 推送可能要求通过浏览器完成 GitHub 登录；普通 GitHub 账号密码不能直接用作 Git 推送密码。</p>
+<p>若提示 <code>Author identity unknown</code>，返回<a href="../setup/#git-author">安装指南的 Git 署名设置</a>。若提示推送被拒绝，先保留本地提交并联系负责人处理，不要执行强制推送。</p>
+<h2 id="8-确认本次发布成功">8. 确认本次发布成功<a class="headerlink" href="#8-确认本次发布成功" title="Permanent link">&para;</a></h2>
+<p>先记下本次提交的简短编号：</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>log<span class="w"> </span>-1<span class="w"> </span>--oneline
+</code></pre></div>
+<p>然后打开<a href="https://github.com/ZJU-Starlight/zju-starlight.github.io/actions">仓库 Actions</a>：</p>
+<ol>
+<li>找到 <strong>Deploy MkDocs to GitHub Pages</strong> 工作流中与本次提交编号、说明及 <code>main</code> 分支对应的运行。</li>
+<li>打开运行详情，查看结果。不要把其他提交的成功记录当成本次成功。</li>
+<li>工作流成功后，继续查看 Pages 的发布记录（通常名为 <strong>pages build and deployment</strong>），确认本次更新对应的部署也已完成。</li>
+<li>打开<a href="https://zju-starlight.github.io/">正式网站</a>，从导航进入修改的页面，核对新标题或一句新增正文。必要时刷新页面。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>结果</th>
+<th>如何处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Queued / In progress</td>
+<td>还在排队或执行，稍后查看</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>此次运行成功；仍需核对正式页面内容</td>
+</tr>
+<tr>
+<td>Failure</td>
+<td>打开失败步骤，复制错误文字，请负责人协助</td>
+</tr>
+<tr>
+<td>Cancelled / Skipped</td>
+<td>尚不能视为发布成功，确认是否有后续运行</td>
+</tr>
+<tr>
+<td>找不到本次运行</td>
+<td>检查 <code>git push</code> 是否成功、远端是否为协会仓库以及分支是否为 <code>main</code></td>
+</tr>
+</tbody>
+</table>
+<p>首次发布还需要负责人按仓库 <a href="https://github.com/ZJU-Starlight/zju-starlight.github.io#github-pages-部署">README 的部署说明</a>配置 Pages 来源。工作流成功但网站仍为 404 时，优先核对 Pages 设置与后续部署，不要反复推送相同内容。运行详情的更多说明见 <a href="https://docs.github.com/en/actions/how-tos/monitor-workflows/view-workflow-run-history">GitHub 官方文档</a>。</p>
+<h2 id="发布前后检查清单">发布前后检查清单<a class="headerlink" href="#发布前后检查清单" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 已获得写入权限，并与其他编辑者确认修改范围。</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 从干净的 <code>main</code> 分支同步后开始编辑。</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 正文不依赖截图，也能说明操作与成功标准。</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 新文章位置正确；需要时已增加导航。</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 严格构建通过，本地网页检查通过。</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 暂存区只包含本次需要提交的文件。</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 本次提交的 Actions 和 Pages 部署成功。</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 正式网页已经显示本次修改。</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.prune", "toc.follow", "navigation.top"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../../../static/data/riddles-data.js"></script>
+      
+        <script src="../../../static/js/lanterns.js"></script>
+      
+        <script src="../../../static/js/terminal-loader.js"></script>
+      
+    
+  </body>
+</html>

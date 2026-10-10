@@ -1,0 +1,130 @@
+#基础设置
+site_name: 星弦·北门观测站 #站点名
+site_url: https://zju-starlight.github.io/ #默认站点地址
+
+extra_css:
+  - static/css/site.css
+  - static/css/lanterns.css
+  - static/css/terminal.css
+extra_javascript:
+  - static/data/riddles-data.js
+  - static/js/lanterns.js
+  - static/js/terminal-loader.js
+
+
+#markdown扩展语法
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition #MkDocs 警告框
+  - footnotes #脚注
+  - meta #自定义文章元数据
+  - pymdownx.caret #下划线
+  - pymdownx.mark #文本高亮
+  - pymdownx.tilde #删除线
+  - toc: # 大纲
+      permalink: true
+      slugify: !!python/name:pymdownx.slugs.uslugify
+
+#站点设置
+theme:
+  features:
+    - content.code.copy #启用代码块复制按钮
+    - navigation.tabs #启用导航选项卡
+    - navigation.tabs.sticky #一级导航随页头固定，滚动时保持可见
+    - navigation.indexes #分组标题可打开栏目首页
+    - navigation.instant
+    - navigation.instant.progress #启用缓冲条
+    - navigation.prune #启用导航修剪
+    - toc.follow #启用导航跟随
+    - navigation.top #返回顶部按钮
+
+  palette:
+    # 日间模式
+    - scheme: default
+      primary: black
+      toggle:
+        icon: material/eye #按键图标
+        name: 潜入黑暗 #图表提示词
+
+    # 夜间模式
+    - scheme: slate
+      primary: white
+      toggle:
+        icon: material/eye-outline
+        name: 迎接光明
+
+  name: material #主题名称
+  font: false
+  language: zh
+  logo: static/img/favicon.png #网页种左上角的图表
+  favicon: static/img/favicon.png #标签页上的图标
+
+# 按读者任务组织导航；旧世界观条目从归档索引进入
+nav:
+  - 首页:
+    - index.md
+    - 认识星弦: club/index.md
+    - 加入星弦: club/join.md
+    - 负责人及分工: club/contacts.md
+  - 活动公告:
+    - events/index.md
+    - 本学期安排: events/semester.md
+    - 活动计划与重要日期: events/calendar.md
+    - 国庆观影会: events/2026/national-day.md
+    - 虚拟读书会第二期: events/2026/virtual-reading-02.md
+  - 在线体验:
+    - play/index.md
+    - 科幻灯谜: play/lanterns.md
+    - 星弦辅助终端: play/terminal.md
+  - 办事手册:
+    - handbook/index.md
+    - 岗位职责与协作: handbook/roles.md
+    - 部门工作:
+      - 天璇：外联与运营: handbook/departments/outreach.md
+      - 天权：校内活动: handbook/departments/events.md
+      - 天玑：财务与物料: handbook/departments/finance.md
+      - 玉衡：技术与B站运营: handbook/departments/technology.md
+      - 开阳：文字与宣传: handbook/departments/publicity.md
+    - 活动举办:
+      - 活动指南: handbook/activity-guide.md
+      - 活动全流程: handbook/activities.md
+      - 场地与教室借用: handbook/venues.md
+      - 结项与二课分: handbook/closing.md
+    - 宣传与媒体:
+      - 宣传指南: handbook/publicity.md
+      - 推文撰写与排版: handbook/wechat.md
+      - 帮推与LED投稿: handbook/promotion.md
+    - 日常管理与换届交接: handbook/handover.md
+    - 文档写作与网站维护:
+      - handbook/website/index.md
+      - 指南撰写指南: handbook/website/writing.md
+      - Markdown语法: handbook/website/markdown.md
+      - Git、Python、VS Code 与本地环境安装: handbook/website/setup.md
+      - 网站文章发布: handbook/website/publishing.md
+      - Git与GitHub原理补充: handbook/website/git.md
+      - 网站框架参考: handbook/website/tools.md
+    - 文件与模板:
+      - handbook/templates/index.md
+      - 通用通知模板: handbook/templates/notice.md
+      - 活动计划书: handbook/templates/proposal.md
+      - 燃藜活动通知: handbook/templates/reading.md
+    - 资料入口: handbook/resources.md
+  - 历史档案:
+    - archive/index.md
+    - 历史现场: archive/history/field-notes.md
+    - 星弦逸闻: archive/history/anecdotes.md
+    - 全员大会资料: archive/history/assembly-notes.md
+    - 2025—2026学年回顾: archive/annual/2025-2026.md
+    - 历届与活动档案: archive/records.md
+    - 2026春夏人事安排: archive/annual/2026-spring-people.md
+    - CC98资料索引: archive/history/cc98-sources.md
+    - 星途所旧档: archive/universe/index.md
